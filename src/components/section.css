@@ -1,0 +1,49 @@
+:root{
+
+    --DarkBlue1: hsl(217, 28%, 15%);
+    --DarkBlue4: hsl(218, 28%, 13%);
+    --DarkBlue2: hsl(216, 53%, 9%);
+    --DarkBlue3: hsl(219, 30%, 18%);
+    
+    
+    --Cyan: hsl(176, 68%, 64%);
+    --Blue: hsl(198, 60%, 50%);
+    --LightRed: hsl(0, 100%, 63%);
+    
+    
+    --White:hsl(0, 0%, 100%);
+    }
+
+.section-head{
+    width: 100%;
+    height: 100%;
+    justify-content: space-evenly;
+    display: grid;
+    padding-top: 3rem;
+}
+.Section-Main{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 7rem;
+}
+.card{
+    color: white;
+    width: 400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+}
+@media(max-width:960px){
+    .Section-Main{
+    grid-template-columns: repeat(1,1fr);
+
+    }
+    .card{
+        width: 100%;
+    }
+}

@@ -1,0 +1,121 @@
+:root{
+
+    --DarkBlue1: hsl(217, 28%, 15%);
+    --DarkBlue4: hsl(218, 28%, 13%);
+    --DarkBlue2: hsl(216, 53%, 9%);
+    --DarkBlue3: hsl(219, 30%, 18%);
+    
+    
+    --Cyan: hsl(176, 68%, 64%);
+    --Blue: hsl(198, 60%, 50%);
+    --LightRed: hsl(0, 100%, 63%);
+    
+    
+    --White:hsl(0, 0%, 100%);
+    }
+
+.Footer{
+    background: var(--DarkBlue2);
+    width: 100%;
+    height: 100vh;
+    color: white;
+    position: relative;
+}
+.footer-kapsams{
+    padding-top: 13rem;
+    padding-inline: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-title{
+    display: flex;
+    gap: 1rem;
+    grid-column: 1;
+}
+.footer-title p{
+    width: 400px;
+}
+.footer-image img{
+    width: 80px;
+    padding-bottom: 2rem;
+}
+.about-kapsam{
+    display: flex;
+    gap: 25px;
+    padding-top: 8rem;
+}
+.aboutone p,.abouttwo p{
+    padding: 10px;
+}
+.aboutone P:hover{
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.abouttwo P:hover{
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.icon-footer{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 15px;
+    justify-content: center;
+    text-align: center;
+}
+.fa-facebook-f,.fa-twitter,.fa-instagram{
+    border: 1px solid white;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+
+}
+.icon-footer i{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.icon-footer i:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+    transform:translateY(-5px);
+}
+.iconfolid{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 3rem;
+}
+.iconfolid p:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.iconfolid p:nth-child(2){
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+@media(max-width:860px){
+    .footer-image p{
+        width: 100%;
+    }
+    .footer-kapsams{
+        padding-top: 9rem;
+        text-align: center;
+    align-items: center;
+    justify-content: center;
+    }
+    .iconfolid{
+        padding-top: 1rem;
+    }
+    .about-kapsam{
+        padding-top: 1rem;
+    }
+}

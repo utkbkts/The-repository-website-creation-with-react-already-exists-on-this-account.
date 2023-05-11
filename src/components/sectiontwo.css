@@ -1,0 +1,52 @@
+.sectiontwo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding-top: 5rem;
+}
+.imageeight{
+    display: flex;
+    align-items: center;
+}
+.sectiontwoimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 30px;
+}
+.sectiontwotitle{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.sectiontwotitle a{
+    color: white;
+    border-bottom: 1px solid white;
+    width: 150px;
+}
+.sectiontwotitle h2{
+    width: 200px;
+}
+.sectiontwotitle p{
+    width: 80%;
+}
+
+.icon a:hover{
+    color: darkgrey;
+}
+@media(max-width:860px){
+    .sectiontwoimage{
+        flex-direction: column;
+        text-align: center;
+    align-items: center;
+    justify-content: center;
+    }
+    .sectiontwotitle{
+        text-align: center;
+    align-items: center;
+    }
+    .imageeight{
+        width: 100%;
+    }
+}
